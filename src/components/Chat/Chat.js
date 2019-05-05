@@ -18,11 +18,16 @@ const styles = {
 };
 
 const question_states = [
-    {0: "Repeat question", 1: "Next question"},
-    {0: "Start over", 1: "Repeat question"},
+    {0 : "Sleep Habits Change", 2 : "Flu like symptoms", 3 : "Unplanned weight loss",
+    4 : "Reduction in energy levels"}
 ];
 
 class Chat extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = 0;
+    }
 
     handleClick = (event) => {
         alert(event.currentTarget.value);
@@ -31,7 +36,6 @@ class Chat extends React.Component {
   render() {
       this.state = 0;
       const { classes } = this.props;
-      const { question_state } = 0;
     return (
       <div className="chat">
           <Grid container justify="center" alignItems="center">
