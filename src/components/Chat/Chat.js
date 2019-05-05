@@ -4,6 +4,7 @@ import Card from "@material-ui/core/Card";
 import Typography from "@material-ui/core/Typography";
 import withStyles from "@material-ui/core/es/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
+import CardActions from "@material-ui/core/CardActions";
 
 const styles = {
     card: {
@@ -22,22 +23,30 @@ const question_states = [
 ];
 
 class Chat extends React.Component {
+
+    handleClick = (event) => {
+        alert(event.currentTarget.value);
+    };
+
   render() {
+      this.state = 0;
       const { classes } = this.props;
-      let { question_state } = 0;
+      const { question_state } = 0;
     return (
       <div className="chat">
           <Grid container justify="center" alignItems="center">
-            {Object.keys(question_states[question_state])
+            {Object.keys(question_states[this.state])
                 .map((question, i) => (
                     <Grid item>
-                        <Card className={classes.card}>
+                        <CardActions>
+                        <Card className={classes.card} value={question} onClick={this.handleClick}>
                             <CardContent>
                                 <Typography>
-                                    {i.toString()}
+                                    {question_states[this.state][question]}
                                 </Typography>
                             </CardContent>
                         </Card>
+                        </CardActions>
                     </Grid>
                 ))}
           </Grid>
