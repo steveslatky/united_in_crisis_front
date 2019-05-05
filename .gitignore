@@ -1,4 +1,7 @@
-.idea
+# JetBrains Stuff
+.idea/workspace.xml
+.idea/tasks.xml
+
 
 # Logs
 logs
