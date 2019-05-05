@@ -9,10 +9,10 @@ import MenuIcon from '@material-ui/icons/Menu';
 const styles = {
     root: {
         flexGrow: 1,
-    },
+    }
 };
 
-function SimpleAppBar(props) {
+function Menubar(props) {
     const { classes } = props;
 
     return (
@@ -28,8 +28,8 @@ function SimpleAppBar(props) {
     );
 }
 
-SimpleAppBar.propTypes = {
-    classes: PropTypes.object.isRequired,
+Menubar.propTypes = {
+    classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles)(SimpleAppBar);
+export default withStyles(styles)(Menubar);
