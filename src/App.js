@@ -10,12 +10,12 @@ import Chat from "./components/Chat/Chat";
 function App() {
   return (
     <div className="App">
-      <Menubar />
-        <Router>
-            <Route exact path="/" component={Home}/>
-            <Route exact path="/Chat" component={Chat}/>
-            <Route exact path="/About" component={About}/>
-        </Router>
+      <Router>
+        <Menubar />
+        <Route exact path="/" component={Home}/>
+        <Route exact path="/Chat" component={Chat}/>
+        <Route exact path="/About" component={About}/>
+      </Router>
     </div>
   );
 }

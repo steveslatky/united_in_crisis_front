@@ -6,14 +6,10 @@ import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from '@material-ui/icons/Menu';
 
-
-import About from "../About/About";
-import Home from "../Home/Home";
-import Chat from "../Chat/Chat";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import ClickAwayListener from "@material-ui/core/ClickAwayListener";
-import Link from "@material-ui/core/Link";
+import { Link } from 'react-router-dom'
 
 const styles = {
     root: {
@@ -58,9 +54,15 @@ function Menubar(props) {
                               anchorEl={anchorEl}
                               open={Boolean(anchorEl)}>
                             <ClickAwayListener onClickAway={handleClose}>
+                                <Link to="/">
                                 <MenuItem onClick={handleClose}>Home</MenuItem>
+                                </Link>
+                                <Link to="/Chat">
                                 <MenuItem onClick={handleClose}>Chat</MenuItem>
+                                </Link>
+                                <Link to="About">
                                 <MenuItem onClick={handleClose}>About</MenuItem>
+                                </Link>
                             </ClickAwayListener>
                         </Menu>
                 </Toolbar>
