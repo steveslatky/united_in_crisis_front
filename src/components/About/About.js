@@ -16,7 +16,7 @@ export default class About extends Component {
         </p>
         <p>
           Hackers: <a href="https://github.com/aliayeszhanova">Alia Yeszhanova</a>
-          , <a href="www.github.com/vlek">Derek McCammond</a>
+          , <a href="https://www.github.com/vlek">Derek McCammond</a>
           , <a href="https://github.com/jlpjr1999">James Poindexter</a>
           , and <a href="https://github.com/steveslatky">Steve Slatky</a>
         </p>
