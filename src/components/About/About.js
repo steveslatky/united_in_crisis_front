@@ -6,7 +6,7 @@ export default class About extends Component {
       <div className="about">
         <h1>About the project:</h1>
         <p>
-          United in Crisis was created to combat the Opioid Crisis.
+          United in Crisis was created in response to the Opioid Crisis.
           Our aim is to create a community based service that allows its users
           to receive support from other users, find resources and spread support
           for other members facing additions. We strive to be community focused.
